@@ -27,8 +27,9 @@ public class MainActivity extends AppCompatActivity {
     };
 
     private void updateUI(RemoteViews remoteViews) {
-        int layoutId = getResources().getIdentifier("layout_simulated_notification", "layout", getPackageName());
-        View view = getLayoutInflater().inflate(layoutId, mLinearLayout,false);
+//        int layoutId = getResources().getIdentifier("layout_simulated_notifications", "layout", getPackageName());
+//        View view = getLayoutInflater().inflate(layoutId, mLinearLayout,false);
+        View view = getLayoutInflater().inflate(R.layout.ff, mLinearLayout,false);
         remoteViews.reapply(this, view);
         mLinearLayout.addView(view);
     }
